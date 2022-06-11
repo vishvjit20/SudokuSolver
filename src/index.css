@@ -85,3 +85,27 @@
 .failure {
   color: red;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 360px;
+    height: 360px;
+  }
+
+  .grid input {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 315px;
+    height: 315px;
+  }
+
+  .grid input {
+    height: 35px;
+    width: 35px;
+  }
+}

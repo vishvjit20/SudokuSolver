@@ -10,7 +10,6 @@ export const solveSudoku = (board, i = 0, j = 0) => {
 
   if (flag) return;
   if (!flag && i === board.length) {
-    console.log("Here nothing");
     flag = true;
     resultBoard = [];
     for (let row = 0; row < 9; row++) {
