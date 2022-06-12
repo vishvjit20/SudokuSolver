@@ -56,12 +56,12 @@
 .odd-rows {
   background-color: lightgray;
   color: #2c394b;
-  border: 1px solid;
+  border: 1px solid #2c394b;
 }
 
 .even-rows {
-  background-color: #eeeeee;
-  border: 1px solid gray;
+  /* background-color: #eeeeee; */
+  border: 1px solid #334756;
   color: #334756;
 }
 
