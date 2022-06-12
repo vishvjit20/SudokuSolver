@@ -55,7 +55,14 @@
 
 .odd-rows {
   background-color: lightgray;
+  color: #2c394b;
+  border: 1px solid;
+}
+
+.even-rows {
+  background-color: #eeeeee;
   border: 1px solid gray;
+  color: #334756;
 }
 
 .message {

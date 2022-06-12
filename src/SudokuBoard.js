@@ -90,7 +90,7 @@ const SudokuBoard = () => {
                       submatrixColStart
                     )
                       ? "odd-rows"
-                      : ""
+                      : "even-rows"
                   }
                   onChange={(e) => handleInput(e, rowIdx, colIdx)}
                 />
