@@ -13,7 +13,9 @@ const SudokuBoard = () => {
 
   const handleInput = (e, rowIdx, colIdx) => {
     const newBoard = [...board];
-    newBoard[rowIdx][colIdx] = Number(e.target.value);
+    let number = +e.target.value;
+    const MOD = 10;
+    newBoard[rowIdx][colIdx] = (+number + MOD) % MOD;
     setBoard(newBoard);
   };
 
@@ -75,10 +77,13 @@ const SudokuBoard = () => {
             return (
               <div className="grid" key={rowIdx + "#" + colIdx}>
                 <input
-                  min="1"
+                  min="0"
                   max="9"
                   type="number"
-                  value={board[rowIdx][colIdx]}
+                  // maxLength="1"
+                  value={
+                    board[rowIdx][colIdx] === 0 ? "0" : +board[rowIdx][colIdx]
+                  }
                   className={
                     displayBackgroundConditions(
                       subMatrixRowStart,
